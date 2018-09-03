@@ -1,23 +1,97 @@
+<!DOCTYPE html>
 <html>
-
   <head>
-
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
   </head>
   <body>
 
-    <input type="file" value="college_female" id="college_female" multiple="multiple"/>
-    <input type="file" id="college_male" multiple="multiple"/>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">TrueSight</a>
+    </nav>
+    <div class="container" style="padding-top:20px;">
+      <div class="row">
+        <div class="col ts-card">
+          <div class="card">
+            <div class="row">
+              <div class="col-xs-4 ts-card-img-div">
+                <img src="assets/images/person-girl-flat.png" class="img-fluid ts-card-img">
+              </div>
+              <div class="col-xs-8">
+                <div class="ts-card-right">
+                  <p>Select female training images</p>
+                  <input type="file" value="college_female" id="college_female" multiple="multiple"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ts-card">
+          <div class="card">
+            <div class="row">
+              <div class="col-xs-4 ts-card-img-div">
+                <img src="assets/images/person-flat.png" class="img-fluid ts-card-img">
+              </div>
+              <div class="col-xs-8">
+                <div class="ts-card-right">
+                  <p>Select male training images</p>
+                  <input type="file" value="college_male" id="college_male" multiple="multiple"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ts-card">
+          <div class="card">
+            <div class="row">
+              <div class="col-xs-4 ts-card-img-div">
+                <img src="assets/images/unknown.png" class="img-fluid ts-card-img">
+              </div>
+              <div class="col-xs-8">
+                <div class="ts-card-right">
+                  <p>Select unknown training images</p>
+                  <input type="file" value="unknown" id="unknown" multiple="multiple"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ts-card">
+          <div class="card">
+            <div class="row">
+              <div class="col-xs-4 ts-card-img-div">
+                <img src="assets/images/test.png" class="img-fluid ts-card-img">
+              </div>
+              <div class="col-xs-8">
+                <div class="ts-card-right">
+                  <p>Select testing images</p>
+                  <input type="file" value="fileinputTest" id="fileinputTest" multiple="multiple"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ts-buttons">
+        <div class="ts-buttons">
+          <button type="button" class="btn btn-success">Start training</button>
+          <button type="button" class="btn btn-warning">Start testing</button>
+        </div>
+      </div>
+      
+    </div>
     <!-- <input type="file" id="sh_female" multiple="multiple"/>
     <input type="file" id="sh_male" multiple="multiple"/> -->
-    <input type="file" id="unknown" multiple="multiple"/>
-
-
-    <input type="file" id="fileinputTest" multiple="multiple"/>
-
-    <img style="width:224px; height: 224px" id="image" src="m.png"/>
-
+    <!-- <img style="width:224px; height: 224px" id="image" src="m.png"/> -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.5"> </script>
-    <script type="text/javascript" src="imgresize.js"></script>
+    <!-- <script type="text/javascript" src="imgresize.js"></script> -->
     <script type="text/javascript" src="index.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>

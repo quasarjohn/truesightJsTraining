@@ -1,0 +1,26 @@
+.ts-card{
+	padding-top: 20px;
+}
+
+.ts-card .card{
+	padding: 20px 0px 20px 0px;
+}
+
+.ts-card-img{
+	max-height:150px;
+}
+
+.ts-card-img-div{
+	margin:auto;
+}
+
+.ts-card-right{
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ts-buttons{
+	padding-top: 20px;
+	margin: 0 auto;
+}
